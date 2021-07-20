@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1, h2 ,h3, h4, p{
+    margin: 10;
+    padding: 10;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+  }
+  
+  nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+  }
+
+nav ul li{
+    font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  padding: 5px;
+  padding-top: 15px;
+}
+
+section {
+
+    border: solid rgb(235, 235, 235);
+    padding: 1px;
+    width: 40%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    position: absolute; 
+    text-align: right;
+    bottom: 1rem;
+    right: 2rem;
+    font-size: 1rem;
+  }
+
+  .btn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 4px 12px;
+    border: solid black;
+    border-radius: 50px;
+    text-align: center;
+    font-weight:bolder;
+    width: 140;
+    font-family: 'Roboto', sans-serif;
+  }
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-top: 2rem;
+}
+
+  form input {
+      padding: 10px;
+      width: 90%;
+      margin:1rem;
+      font-size: 1rem;
+      border: none;
+      font-family: 'Roboto', sans-serif;
+      
+  }
+  
+  .btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+  #content {
+      height: 100;
+      overflow: visible;
+  }
+
+  form textarea {
+    padding: 10px;
+    width: 90%;
+    margin:1rem;
+    font-size: 1rem;
+    border: none;
+    resize: none;
+    padding-top: 5px;
+    height: 100;
+    font-family: 'Roboto', sans-serif;
+}
