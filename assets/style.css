@@ -4,6 +4,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    scrollbar-width: thin;
+
+
   }
   
   h1, h2 ,h3, h4, p{
