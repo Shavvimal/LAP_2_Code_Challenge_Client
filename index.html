@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anon Blog</title>
+        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="icon" href="./assets/images/buttercup.svg" />
+        <script src="main.js" defer></script>
+    </head>
+
+<!-- Fonts -->
+<!-- The curly one -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<body>
+    <header>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                <g id="Icons" style="opacity:0.75">
+                <g id="Book">
+                <g id="frame">
+                <path d="M18,4H6C4,3.993,3,4.993,3,6.993L3.014,16C3,18,4,18.988,6,19h12c2-0.012,2.994-1,3-3.006V6.993C20.994,4.993,20,3.993,18,4  z"/>
+                </g>
+                <g id="left page">
+                <path fill="#FFFFFF" d="M5.34,16.999C5,17.018,5,16.755,5,16.552V8.4C5,8.189,5.287,8,5.489,8l0,0c0.203,0,0.489,0.189,0.489,0.4  v7.759c2.171-0.284,3.582-0.368,5.596,0.229c0.315,0.188,0.172,0.654-0.162,0.608L5.34,16.999z"/>
+                <path fill="#FFFFFF" d="M8.788,7c1.877,0.122,2.962,1,2.962,1l-0.003,7.4C9.458,14.338,7,15.067,7,15.067L7.001,7.4  C7.001,7.4,7.414,7,8.788,7z"/>
+                </g>
+                <g id="right page">
+                <path fill="#FFFFFF" d="M12.588,16.997c-0.335,0.045-0.477-0.42-0.162-0.608c2.014-0.597,3.426-0.513,5.596-0.229V8.4  c0-0.211,0.286-0.4,0.489-0.4l0,0C18.713,8,19,8.189,19,8.4v8.152c0,0.203,0,0.466-0.34,0.447L12.588,16.997z"/>
+                <path fill="#FFFFFF" d="M16.999,7.4L17,15.067c0,0-2.458-0.729-4.747,0.333L12.25,8c0,0,1.085-0.878,2.962-1  C16.586,7,16.999,7.4,16.999,7.4z"/>
+                </g>
+                </g>
+                </g>
+                </svg>
+        </div>
+        <nav class="text-white mt-2 mr-2">
+          <ul>
+            <li style="cursor: pointer;" id="link1" onclick="hidepostsshowform()">Make a Post</li>
+            <li style="cursor: pointer;" id="link2" onclick="hideformshowpost()">See Posts</li>
+          </ul>
+        </nav>
+  
+      </header>
+
+      <section id="form-sect" class="hidden">
+        <form id="form">
+        <input type="text" id="Title" name="Title" Placeholder="Title"><br>
+        <input type="text" id="name" name="name" Placeholder="Your name"><br>
+        <textarea id="fact" form="form" tabindex="0" type="text" placeholder="Your story..."></textarea>                          
+        <input class="btn" type='submit' value="PUBLISH" onclick="hideformshowpost()">
+        </form>
+      </section>
+  
+
+   <section id="posts-sect" class="">
+    <div id="posts">
+<div>
+    <h1>Title</h1>
+    <h3>Name</h3>
+    <p>Text</p>
+</div>
+<div>
+    <h1>Title</h1>
+    <h3>Name</h3>
+    <p>Text</p>
+</div>
+<div>
+    <h1>Title</h1>
+    <h3>Name</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum est modi quam explicabo voluptate provident expedita eos possimus quaerat consequuntur impedit saepe nam, enim perspiciatis, quo, ullam pariatur doloremque numquam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum est modi quam explicabo voluptate provident expedita eos possimus quaerat consequuntur impedit saepe nam, enim perspiciatis, quo, ullam pariatur doloremque numquamLorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum est modi quam explicabo voluptate provident expedita eos possimus quaerat consequuntur impedit saepe nam, enim perspiciatis, quo, ullam pariatur doloremque numquamLorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum est modi quam explicabo voluptate provident expedita eos possimus quaerat consequuntur impedit saepe nam, enim perspiciatis, quo, ullam pariatur doloremque numquam</p>
+</div>
+<div>
+    <h1>Title</h1>
+    <h3>Name</h3>
+    <p>Text</p>
+</div>
+<div>
+    <h1>Title</h1>
+    <h3>Name</h3>
+    <p>Text</p>
+</div>
+<div>
+    <h1>Title</h1>
+    <h3>Name</h3>
+    <p>Text</p>
+</div>
+
+
+
+</div>
+
+  </section>
+
+    </body>
+    <footer class="caption">
+        <p>
+            © Shav & Moony
+        </p>
+      </footer>
+
+</html>
