@@ -9,7 +9,7 @@ getAllPosts();
 
 
 function getAllPosts(){
-    fetch('http://localhost:3000/dogs')
+    fetch('http://localhost:3000/posts')
         .then(r => r.json())
         .then(appendposts)
         .catch(console.warn)
@@ -20,9 +20,10 @@ function submitpost(e){
     e.preventDefault();
 
     const postData = {
-        name: e.target.title.value,
-        age: e.target.name.value,
-        // story: e.target.story.value,
+
+        title: e.target.title.value,
+        name: e.target.name.value,
+        story: e.target.story.value,
     };
 
     const options = { 
@@ -31,7 +32,7 @@ function submitpost(e){
         headers: { "Content-Type": "application/json" }
     };
 
-    fetch('http://localhost:3000/dogs', options)
+    fetch('http://localhost:3000/posts', options)
         .then(r => r.json())
         .then(appendpost)
         .then(() => e.target.reset())
@@ -44,19 +45,22 @@ function submitpost(e){
 // helpers
 
 function appendposts(data){
-    data.dogs.forEach(appendpost);
+    data.posts.forEach(appendpost);
 };
 
 function appendpost(post) {
     let div = document.createElement("div")
-    const nameTd = document.createElement('h1');
-    const ageTd = document.createElement('h3');
+    const titleE = document.createElement('h1');
+    const nameE = document.createElement('h3');
+    const storyE = document.createElement('p');
 
-    nameTd.textContent = post.name
-    ageTd.textContent = post.age
+    titleE.textContent = post.title
+    nameE.textContent = post.name
+    storyE.textContent = post.story
 
-    div.append(nameTd)
-    div.append(ageTd)
+    div.append(titleE)
+    div.append(nameE)
+    div.append(storyE)
 
     postsList.append(div);
 };
