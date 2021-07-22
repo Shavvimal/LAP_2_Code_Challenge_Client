@@ -9,7 +9,7 @@ getAllPosts();
 
 
 function getAllPosts(){
-    fetch('http://localhost:3000/posts')
+    fetch('http://13.59.11.193:3000/posts')
         .then(r => r.json())
         .then(appendposts)
         .catch(console.warn)
@@ -32,7 +32,7 @@ function submitpost(e){
         headers: { "Content-Type": "application/json" }
     };
 
-    fetch('http://localhost:3000/posts', options)
+    fetch('http://13.59.11.193:3000/posts', options)
         .then(r => r.json())
         .then(appendpost)
         .then(() => e.target.reset())
