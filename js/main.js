@@ -8,6 +8,6 @@ function hidepostsshowform() {
 function hideformshowpost() {
     let sect = document.getElementById('form-sect') 
     sect.setAttribute('class', 'hidden')
-    let sect2 = document.getElementById('posts-sect') 
+    let sect2 = document.getElementById('posts-sect')
     sect2.setAttribute('class', '')
 }
